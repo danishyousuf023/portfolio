@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+
+        $(document).ready(function () {
+
+            $("#my").click(function () {
+                $("#mys").toggle("slow");
+            });
+        });
+        
+   
+        $(document).ready(function () {
+
+$("#a1").click(function () {
+    $("#home").show("slow");
+});
+});
+$(document).ready(function () {
+
+$("#a2").click(function () {
+    $("#mys").show("slow");
+});
+});
+
+$(document).ready(function () {
+
+$("#a3").click(function () {
+    $("#edu").show("slow");
+});
+});
+
+$(document).ready(function () {
+
+$("#a4").click(function () {
+    $("#proj").show("slow");
+});
+});
+$(document).ready(function () {
+
+$("#a5").click(function () {
+    $("#con").show("slow");
+});
+});
+
+        $(document).ready(function () {
+
+            $("#pro").click(function () {
+                $("#proj").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#ed").click(function () {
+                $("#edu").animate(
+                    {
+                        zoom: 1.2
+                    }
+
+                );
+            });
+        });
+        $(document).ready(function () {
+            $("#co").click(function () {
+                $("#con").slideToggle(1000);
+            });
+        });
+        $(document).ready(function () {
+            $("#ed").dblclick(function () {
+                $("#edu").animate(
+                    {
+                        zoom: 1
+                    }
+
+                );
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <nav class="navbar" id="home">
+        <ul>
+            <li id="a1"><a href="#home" >Home</a></li>
+            <li id="a2"><a href="#page1" >About me</a></li>
+            <li id="a3"><a href="#page3" >My Education</a></li>
+            <li id="a4"><a href="#page2" >My Projects</a></li>
+            <li id="a5"><a href="#page4" >Contct me</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <h2 id="my">About me!!!</h2>
+    <section id="page1">
+        <div id="mys">
+
+            <ul>
+                <li>
+                    Name : Danish Yousuf
+                </li>
+
+                <li>
+                    Currently : Btech 2nd-Year
+                </li>
+                <li>
+                    college: ITER bbsr
+                </li>
+                <li>
+                    Address : Sagam kokernag,
+                    anantnag ,192202
+
+                </li>
+                <li>
+                    Hobbies:Exploring new Things
+                </li>
+            </ul>
+            <ul>
+                <img src="w1.jpg" height="169" width="169">
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <section id="page2">
+        <h2 id="pro">My Top projects</h2>
+        <div id="proj">
+
+            <li>
+                Project 1: <a href="#">Website For School </a>
+            </li>
+            <li>
+                Project 2: <a href="#">Website For Flight </a>
+            </li>
+            <li>
+                Project 3: <a href="#">Website For Hotel</a>
+            </li>
+            <li>
+                Project 4: <a href="#">Odisa covid Prediction(Contributor) </a>
+            </li>
+        </div>
+    </section>
+    <section id="page4">
+        <h2 id="co">Contact Me</h2>
+        <div id="con">
+            <ol>
+                <li>
+                    Github: <a href="#">Danish@19</a>
+                </li>
+                <li>
+                    Gmail: <a href="#">Danish@gmail.com</a>
+                </li>
+                <li>
+                    Instagram: <a href="#">Danish19</a>
+                </li>
+                <li>
+                    Linkidin: <a href="#">Danish19ah</a>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section id="page3">
+        <h2 id="ed">My Education</h2>
+        <div id="edu">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>School</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10th</td>
+                        <td>IMSS akingam</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>12th</td>
+                        <td>IMSS akingam</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>1st year</td>
+                        <td>ITER bbsr</td>
+                        <td>9.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</body>
+
+</html>
